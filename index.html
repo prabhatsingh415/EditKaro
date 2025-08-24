@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EditKaro</title>
+  </head>
+  <body>
+    <header>
+      <div id="header_container">
+        <div id="logo">
+          <img src="../assets/logo.webp" height="50px" width="100px" />
+        </div>
+        <div class="links">
+          <a style="color: #ff5e00; text-shadow: 0 0 20px #ff5e00" href="/"
+            >Home</a
+          >
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero_section">
+        <h1>Transform Moments into Masterpieces</h1>
+        <p>Edit smarter, create bolder — your vision deserves the spotlight.</p>
+        <button class="cta_btn" onclick="location.href='#contact'">
+          Get Started
+        </button>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+          <div class="service-card">
+            <img src="../assets/photoEditing.jpg" alt="Photo Editing" />
+            <h3>Photo Editing</h3>
+            <p>
+              Professional retouching, color correction, and enhancements to
+              make your photos stand out.
+            </p>
+          </div>
+          <div class="service-card">
+            <img src="../assets/videoEditing.jpg" alt="Video Editing" />
+            <h3>Video Editing</h3>
+            <p>
+              Seamless cuts, transitions, and cinematic effects to bring your
+              story to life.
+            </p>
+          </div>
+          <div class="service-card">
+            <img src="../assets/colorGrading.jpg" alt="Color Grading" />
+            <h3>Color Grading</h3>
+            <p>
+              Enhance mood and tone with advanced color grading for photos &
+              videos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="short">Short-form</button>
+          <button class="filter-btn" data-category="long">Long-form</button>
+          <button class="filter-btn" data-category="gaming">Gaming</button>
+          <button class="filter-btn" data-category="football">
+            Football Edits
+          </button>
+          <button class="filter-btn" data-category="ecommerce">
+            eCommerce Ads
+          </button>
+          <button class="filter-btn" data-category="documentary">
+            Documentary
+          </button>
+          <button class="filter-btn" data-category="anime">Anime</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Portfolio Items -->
+          <div
+            class="portfolio-item"
+            data-category="short"
+            data-description="A 30-second Instagram reel edited with smooth transitions and effects."
+          >
+            <img src="../assets/short1.jpg" alt="Short-form Video 1" />
+            <div class="overlay"><h3>Short-form Video</h3></div>
+          </div>
+          <div
+            class="portfolio-item"
+            data-category="short"
+            data-description="Another short-form video showcasing storytelling and visual effects."
+          >
+            <img src="../assets/short2.jpg" alt="Short-form Video 2" />
+            <div class="overlay"><h3>Short-form Video</h3></div>
+          </div>
+          <div
+            class="portfolio-item"
+            data-category="long"
+            data-description="A long-form YouTube video edited with cinematic transitions and color grading."
+          >
+            <img src="../assets/long1.jpg" alt="Long-form Video 1" />
+            <div class="overlay"><h3>Long-form Video</h3></div>
+          </div>
+          <div
+            class="portfolio-item"
+            data-category="long"
+            data-description="Documentary style long-form edit with voice-over and B-roll sequences."
+          >
+            <img src="../assets/long2.jpg" alt="Long-form Video 2" />
+            <div class="overlay"><h3>Long-form Video</h3></div>
+          </div>
+          <div
+            class="portfolio-item"
+            data-category="gaming"
+            data-description="Gaming montage with action highlights, sound sync, and color grading."
+          >
+            <img src="../assets/gaming1.jpg" alt="Gaming Video 1" />
+            <div class="overlay"><h3>Gaming Video</h3></div>
+          </div>
+          <div
+            class="portfolio-item"
+            data-category="gaming"
+            data-description="Another gaming video with epic moments and fast cuts."
+          >
+            <img src="../assets/gaming2.jpg" alt="Gaming Video 2" />
+            <div class="overlay"><h3>Gaming Video</h3></div>
+          </div>
+          <div
+            class="portfolio-item"
+            data-category="football"
+            data-description="Football match highlights edited with slow-motion and commentary overlay."
+          >
+            <img src="../assets/football1.jpg" alt="Football Video 1" />
+            <div class="overlay"><h3>Football Edit</h3></div>
+          </div>
+          <div
+            class="portfolio-item"
+            data-category="documentary"
+            data-description="Documentary video with interviews, B-roll, and story narration."
+          >
+            <img src="../assets/documentary1.jpg" alt="Documentary Video 1" />
+            <div class="overlay"><h3>Documentary</h3></div>
+          </div>
+          <div
+            class="portfolio-item"
+            data-category="anime"
+            data-description="Anime style video edit with special effects and background music."
+          >
+            <img src="../assets/anime1.jpg" alt="Anime Video 1" />
+            <div class="overlay"><h3>Anime</h3></div>
+          </div>
+          <div
+            class="portfolio-item"
+            data-category="ecommerce"
+            data-description="eCommerce ad showcasing product features with motion graphics."
+          >
+            <img src="../assets/ecommerce1.jpg" alt="eCommerce Video 1" />
+            <div class="overlay"><h3>eCommerce Ad</h3></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Us</h2>
+        <div class="about-container">
+          <img src="../assets/team.jpg" alt="Team Image" />
+          <div class="about-text">
+            <p>
+              We are a creative editing studio dedicated to transforming your
+              moments into stunning visuals. Our team specializes in photo
+              editing, video editing, color grading, and more.
+            </p>
+            <p>
+              Our mission is to make your content shine and leave a lasting
+              impact on your audience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <p>
+              Email: <a href="mailto:EditKaro@gmail.com">EditKaro@gmail.com</a>
+            </p>
+            <p>Phone: +91 12345 67890</p>
+            <p>Location: Rajasthan, India</p>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal for portfolio -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modal-img" src="" alt="Portfolio Detail" />
+        <h3 id="modal-title"></h3>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <img
+            src="../assets/logo.webp"
+            alt="EditKaro Logo"
+            class="footer-logo"
+          />
+          <p>
+            Transform your visuals into cinematic masterpieces. Professional
+            editing services for photos and videos to make your content shine.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press & Media</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="footer-social">
+            <a href="https://github.com/prabhatsingh415" target="_blank"
+              >Github</a
+            >
+            <a
+              href="https://www.linkedin.com/in/prabhat-singh-rj415/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://x.com/Prabhatsingh415" target="_blank">Twitter</a>
+            <a href="https://www.fiverr.com/s/2K8VGAq" target="_blank"
+              >Fiverr</a
+            >
+          </div>
+          <a
+            href="https://www.fiverr.com/s/2K8VGAq"
+            target="_blank"
+            class="fiverr-btn"
+            >Hire Me on Fiverr</a
+          >
+          <h4>Newsletter</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EditKaro. All rights reserved.</p>
+        <p>&copy; Developed By Prabhat Singh.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
