@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px; /* header ke height + thoda gap */
+}
 
 body {
   height: 100%;
@@ -280,6 +284,8 @@ body {
 
 /* About Section */
 #about {
+  height: 100vh;
+  width: 90%;
   padding: 60px 5%;
   background-color: #000;
   color: #fff;
@@ -334,6 +340,7 @@ body {
 
 /* Contact Section */
 #contact {
+  height: 100vh;
   padding: 60px 5%;
   background-color: #000;
   color: #fff;

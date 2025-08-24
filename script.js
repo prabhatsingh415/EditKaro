@@ -69,6 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("click", (e) => {
     if (e.target === modal) modal.style.display = "none";
   });
+
+  window.addEventListener("load", () => {
+    ScrollTrigger.refresh();
+  });
 });
 
 const menuToggle = document.getElementById("menu-toggle");
