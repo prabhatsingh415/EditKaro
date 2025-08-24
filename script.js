@@ -70,3 +70,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target === modal) modal.style.display = "none";
   });
 });
+
+const menuToggle = document.getElementById("menu-toggle");
+const mobilePanel = document.getElementById("mobile-panel");
+const closeBtn = document.getElementById("close-btn");
+
+// Open Panel
+menuToggle.addEventListener("click", () => {
+  mobilePanel.style.right = "0";
+});
+
+// Close Panel
+closeBtn.addEventListener("click", () => {
+  mobilePanel.style.right = "-100%";
+});
